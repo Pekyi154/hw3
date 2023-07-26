@@ -52,11 +52,16 @@ footer {
 main { 
 	display: grid; 
 	margin: 20px;
-	grid-template-rows:	repeat(12, 1fr);
-	grid-template-columns: repeat(auto-fit, 1fr);
-	justify-content: center;
-	align-content: center;  
-	gap: 30px 15px; 
+	grid-template-rows:	repeat(4, minmax(200px, 1fr));
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	grid-template-areas:
+	'sec1 sec1'
+	'sec2 sec3'
+	'sec4 sec5'
+	;
+	justify-content: space-evenly;
+	align-content: space-evenly;  
+	gap: 50px 90px; 
 }
 
 .secTag {
@@ -66,45 +71,51 @@ main {
 	font-variant-caps: all-petite-caps;
 	font-size: 200%;
 }
+
 .sec1 {
 	text-align: left;
-	grid-area: 1/2/4/20;
+	grid-area: sec1;
 	padding: 30px;
 	background-color: orange; 
 	border-style: groove;
+	
 }
 .sec2 {
 	position: relative;
 	text-align: center;
-	grid-area: 5/4/8/10;
+	grid-area: sec2;
 	background-image: url('../media/uclogo.png');
 	background-size: 100% 100%;
 	background-color: navy;
+	justify-items: center;
 }
 .sec3 {
 	position: relative;
 	text-align: center;
-	grid-area: 5/12/8/18;
+	grid-area: sec3;
 	background-color: purple;
+	justify-items: center;
+
 }
 .sec4 {
 	position: relative;
 	text-align: center;
-	grid-area: 9/4/12/10;
+	grid-area: sec4;
 	background-color: brown;
+	justify-items: center;
+
 }
 .sec5 {
 	position: relative;
 	text-align: center;
-	grid-area: 9/12/12/18;
+	grid-area: sec5;
 	background-color: lightgreen;
+	justify-items: center;
+
+}
 
 .moreBtn {
 	position: center;
-	/*left: 65px;
-	bottom: 20px;
-	width: 125px;
-	height: 25px;*/
 	background-color: blue;
 	font-variant-caps: all-petite-caps;
 	color: var(--but-text-color);
@@ -117,7 +128,6 @@ main {
 @media screen and (max-width: 800px) {
   .sec1, .sec2, .sec3, .sec4, .sec5 {
     	width: 100%;
-
   }
 
 
