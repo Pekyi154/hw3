@@ -19,7 +19,11 @@ footer {
 	background-color: white;
 	place-items: center;
 }
-
+.navbar {
+	overflow: hidden;
+	background-color: lightcoral;
+	float: right;
+}
 .navbar a {
   float: left;
   color: #f2f2f2;
