@@ -1,67 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Tenzin Pekyi</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is my website">
-        <meta name="author" content="Tenzin">
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <style> </style>
-        <script>
-        <!--This is where my javascript would go -->
-        </script>
-    </head>
-    <body> 
-        <!--<hr>
-        <h1> Portfolio </h1>
-        <hr>-->
-        <main>
-            <div class="container">
-            <section class="sec1">
-                <img src="../media/me.jpeg" id="me" alt="potrait">
-                <h2>Introduction</h2>
-                <figure>
-                    <!--<img src="">-->
-                    <figcaption>Tenzin Pekyi<br>Java Developer</figcaption>
-                </figure>
-            </section>
+:root {
+	--body-color: lightpink;	
+	--text-decoration-color: black;
+	--but-text-color: white;
+	--main-font: "Lucida Console", "Courier New", monospace; 
+	--main-font-weight: strong;
+	--font-size: 20px;
+}
 
-            <section class="sec2 secTag"> 
-                <h2>Academic History</h2>
-                <!--<img src=""> image will be here as grit background-->
-                <a href="academicH.html">
-                <button class="moreBtn">More info</button> 
-                </a>
-            </section>
+html {
+	background-color: var(--body-color);
+	background: linear-gradient(to bottom, var(--body-color), 
+								rgba(26,246,252, 1));
+	text-align: center;
+}
+footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+	padding: 15px;
+	background-color: white;
+	place-items: center;
+}
+#me {
+	height: 150px;
+	width: 150px;
+	border-radius: 150px;
+	border: 1px solid rgb(237,154,255);
+	object-fit: cover;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 100px;
+}
 
-            <section class="sec3 secTag"> 
-                <h2> Experience </h2>
-                <!--<img src=""> image will be here as grit background-->
-                <a href="experience.html">
-                <button class="moreBtn">More info</button>
-            </a>
-            </section>
+#uclogo {
+	height: 350px;
+	width: 250px;
+	border: 1px solid rgb(237,154,255);
+	object-fit: cover;
+	float: center;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 100px; 
+}
+#header {
+	color: red;
+}
 
-            <section class="sec4 secTag"> 
-                <h2> Contact </h2>
-                <!--<img src=""> image will be here as grit background-->
-                <a href="contact.html">
-                <button class="moreBtn">More info</button>
-            </a>
-            </section>
+main { 
+	display: grid; 
+	margin: 20px;
+	grid-template-rows:	repeat(12, 1fr);
+	grid-template-columns: repeat(auto-fit, 1fr);
+	justify-content: center;
+	align-content: center;  
+	gap: 30px 15px; 
+}
 
-            <section class="sec5 secTag"> 
-                <h2> Projects </h2>
-                <!--<img src=""> image will be here as grit background-->
-                <a href="projects.html">
-                <button class="moreBtn">More info</button>
-            </a>
-            </section class="sec6">
-        </div>
-            <!--<div>
-                <p>contacts</p>
-            </div>-->
-        </main>
-        <footer>Author Tenzin</footer>
-    </body>
-</html>
+.secTag {
+	position: relative;
+	color: white;
+	font-family: var(--main-font); 
+	font-variant-caps: all-petite-caps;
+	font-size: 200%;
+}
+.sec1 {
+	text-align: left;
+	grid-area: 1/2/4/20;
+	padding: 30px;
+	background-color: orange; 
+	border-style: groove;
+}
+.sec2 {
+	position: relative;
+	text-align: center;
+	grid-area: 5/4/8/10;
+	background-image: url('../media/uclogo.png');
+	background-size: 100% 100%;
+	background-color: navy;
+}
+.sec3 {
+	position: relative;
+	text-align: center;
+	grid-area: 5/12/8/18;
+	background-color: purple;
+}
+.sec4 {
+	position: relative;
+	text-align: center;
+	grid-area: 9/4/12/10;
+	background-color: brown;
+}
+.sec5 {
+	position: relative;
+	text-align: center;
+	grid-area: 9/12/12/18;
+	background-color: lightgreen;
+
+.moreBtn {
+	position: center;
+	/*left: 65px;
+	bottom: 20px;
+	width: 125px;
+	height: 25px;*/
+	background-color: blue;
+	font-variant-caps: all-petite-caps;
+	color: var(--but-text-color);
+	font-family: var(--main-font);
+	font-weight: var(--main-font-weight);
+	font-size: var(--font-size);
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .sec1, .sec2, .sec3, .sec4, .sec5 {
+    	width: 100%;
+
+  }
+
+
