@@ -1,8 +1,7 @@
 :root {
 	--body-color: lightpink;	
 	--text-decoration-color: black;
-	--but-text-color: white;
-	--main-font-family: "Lucida Console", "Courier New", monospace; 
+	--but-text-color: white; 
 	--main-font-weight: bold;
 	--font-size: 20px;
 }
@@ -67,7 +66,7 @@ main {
 .secTag {
 	position: relative;
 	color: white;
-	font-family: var(--main-font); 
+	font-family: "Lucida Console", "Courier New", monospace; 
 	font-variant-caps: all-petite-caps;
 	font-size: 200%;
 }
@@ -119,7 +118,7 @@ main {
 	background-color: blue;
 	font-variant-caps: all-petite-caps;
 	color: var(--but-text-color);
-	font-family: var(--main-font);
+	font-family: "Lucida Console", "Courier New", monospace;
 	font-weight: var(--main-font-weight);
 	font-size: var(--font-size);
 	border-radius: 5px;
