@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tenzin Pekyi</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my website">
+        <meta name="author" content="Tenzin">
+        <link href="contact.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body> 
+        <nav class="navbar">
+                <a class="home" href="home.html">Home</a> 
+                <a class="active" href="labs.html">Labs</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="experience.html">Experiance</a> 
+                <a href="academicH.html">Academic History</a> 
+                <a href="projects.html">Projects</a>
+        </nav>        
+            <h3>pre tag</h3>
+        <pre>
+            Tenzin Pekyi
+            (546)193-4958
+            UCSD, CA
+        </pre>
+        <hr>
+        <p>code tag <br> <code>tpekyi@ucsd.edu</code></p>
+        <hr>
+        <p>audio and video tag</p>
+        <audio controls>
+            <source scr="cat.wav">
+        </audio>
+        <video controls>
+            <source src="video.mp4">
+        </video>
+        <hr>
+        <p>ordered list</p>
+        <ol>
+            <li>Name</li>
+            <li>Major</li>
+            <li>Gender</li>
+        </ol>
+        <br>
+        <fieldset>
+            <form>
+                <h1><legend>Enter your Information</legend></h1>
+                <label> Name </label>
+                <input id="name">
+                <datalist id="name">
+                    <option value="Tenzin"></option>
+                    <option value="Pekyi"></option>
+                </datalist>
+                <label> Major </label>
+                <input>
+                <button>submit</button>
+            </form>
+        </fieldset>
+        
+        <select>
+            <optgroup>
+                <option> Female </option>
+                <option> Male </option>
+                <option> Others </option>
+            </optgroup>
+        </select>
+        <hr>
+        
+        <datalist>
+            <option> </option>
+        </datalist>
+        <label>Write your thoughts about textarea</label>
+        <br>
+        <textarea> </textarea>
+        <hr>
+        <h1><label> City name </label></h1>
+        <input type="text" id="city" name="city">
+        <datalist id="cities">
+            <option value="Claremont">
+            <option value="Richmond">
+        </datalist>
+        <hr>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px;">
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+            </script>
+        </canvas>
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198" />
+        </svg>
+        <span style="color:blue;font-weight:bold">CODING!</span>
+    </body>
+</html>

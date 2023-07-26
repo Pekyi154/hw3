@@ -1,0 +1,22 @@
+:root {
+	--body-color: lightpink;	
+	--text-decoration-color: black;
+	--but-text-color: white;
+	--main-font: "Lucida Console", "Courier New", monospace; 
+	--main-font-weight: strong;
+	--font-size: 20px;
+}
+html {
+	background-size: cover;
+	background-color: var(--body-color);
+	background: linear-gradient(to bottom, var(--body-color), 
+								rgba(26,246,252, 1));
+	
+}
+footer {
+	text-align: center;
+	padding: 15px;
+	background-color: white;
+	place-items: center;
+}
+
