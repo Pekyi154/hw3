@@ -3,7 +3,7 @@
 	--text-decoration-color: black;
 	--but-text-color: white;
 	--main-font: "Lucida Console", "Courier New", monospace; 
-	--main-font-weight: strong;
+	--main-font-weight: bold;
 	--font-size: 20px;
 }
 
@@ -40,7 +40,7 @@ footer {
 	width: 250px;
 	border: 1px solid rgb(237,154,255);
 	object-fit: cover;
-	float: center;
+	float: none;
 	margin-right: 10px;
 	text-align: center;
 	line-height: 100px; 
@@ -115,7 +115,7 @@ main {
 }
 
 .moreBtn {
-	position: center;
+	position: relative;
 	background-color: blue;
 	font-variant-caps: all-petite-caps;
 	color: var(--but-text-color);
