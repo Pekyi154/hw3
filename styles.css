@@ -2,7 +2,7 @@
 	--body-color: lightpink;	
 	--text-decoration-color: black;
 	--but-text-color: white;
-	--main-font: "Lucida Console", "Courier New", monospace; 
+	--main-font-family: "Lucida Console", "Courier New", monospace; 
 	--main-font-weight: bold;
 	--font-size: 20px;
 }
