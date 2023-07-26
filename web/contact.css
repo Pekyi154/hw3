@@ -1,0 +1,45 @@
+:root {
+	--body-color: lightpink;	
+	--text-decoration-color: black;
+	--but-text-color: white;
+	--main-font: "Lucida Console", "Courier New", monospace; 
+	--main-font-weight: strong;
+	--font-size: 20px;
+}
+body {
+	background-size: cover;
+	background-color: var(--body-color);
+	background: linear-gradient(to bottom, var(--body-color), 
+								rgba(26,246,252, 1));
+	text-align: center;
+}
+footer {
+	text-align: center;
+	padding: 15px;
+	background-color: white;
+	place-items: center;
+}
+.navbar {
+	overflow: hidden;
+	background-color: lightcoral;
+	float: right;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
